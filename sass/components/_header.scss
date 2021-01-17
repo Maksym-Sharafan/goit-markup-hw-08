@@ -1,15 +1,17 @@
-.header {
+header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 .header-nav {
-  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .logo {
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
@@ -20,13 +22,6 @@
   & span {
     color: $accent-color;
   }
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -51,11 +46,11 @@
   .menu-container {
     display: none;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+
     top: 100%;
-    // height: 393px;
     width: 100%;
+    background-color: $text-white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
   }
@@ -75,26 +70,20 @@
     display: flex;
     justify-content: center;
   }
-  .nav-list-item:not(:last-child) {
-    padding-bottom: 40px;
+  .nav-list-item:not(:first-child) {
+    padding-top: 40px;
   }
   .nav-contacts-item:not(:last-child) {
     padding-bottom: 16px;
   }
-  // .nav-list-link {
-  //   position: relative;
-  // }
+  .nav-list-link {
+    position: relative;
+  }
   .current::after {
-    // position: absolute;
-    // bottom: -8px;
-    // left: 0;
-
+    position: absolute;
+    bottom: -8px;
+    left: 0;
     content: "";
-
-    width: 100%;
-    height: 4px;
-    background-color: $accent-color;
-    border-radius: 2px;
   }
 }
 
@@ -104,6 +93,10 @@
   }
 }
 
+.nav-list-item {
+  position: relative;
+}
+
 .nav-list-link {
   font-weight: 500;
   font-size: 18px;
@@ -111,6 +104,10 @@
   letter-spacing: 0.02em;
   color: $text-color-black;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .nav-contacts-link {
@@ -120,6 +117,10 @@
   letter-spacing: 0.02em;
   color: $text-color-gray;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .link-mail,
@@ -128,39 +129,20 @@
   fill: currentColor;
 }
 
-.nav-list-item {
-  position: relative;
-  &:hover .nav-list-link,
-  &:focus .nav-list-link {
-    color: $accent-color;
+.current {
+  color: $accent-color;
+  &::after {
+    position: absolute;
+    left: 0;
+
+    content: "";
+
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    @media screen and (min-width: 768px) {
+      bottom: -1px;
+    }
   }
-}
-.nav-contacts-item {
-  &:hover .nav-contacts-link,
-  &:focus .nav-contacts-link {
-    color: $accent-color;
-  }
-}
-
-// .current {
-//   color: $accent-color;
-//   &::after {
-//     position: absolute;
-//     bottom: -1px;
-//     left: 0;
-
-//     content: "";
-
-//     width: 100%;
-//     height: 4px;
-//     background-color: $accent-color;
-//     border-radius: 2px;
-//   }
-// }
-
-main {
-  display: none;
-}
-footer {
-  display: none;
 }

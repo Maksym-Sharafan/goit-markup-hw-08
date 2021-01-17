@@ -15,47 +15,49 @@
 <body>
         <!--header-->
         <header class="header">
-            <nav class="header-nav">
-        
+            
                 <div class="container">
+                    <nav class="header-nav">
+
                         <a class="logo" href="/"><span>Web</span>Studio</a>
-                        <button class="header-button is-open" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                        <button class="header-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                             <svg class="" width="24px" height="24px" aria-label="Переключатель мобильного меню">
                                 <use class="icon-menu" href="./sprite.svg#icon-menu"></use>
                                 <use class="icon-close" href="./sprite.svg#icon-close"></use>
                             </svg>
                         </button>
-                    <div class="menu-container is-open" id="menu-container" data-menu>
-                        <ul class="nav-list">
-                            <li class="nav-list-item">
-                                <a class="nav-list-link current" href="./index.html">Студия</a>
-                            </li>
-                            <li class="nav-list-item">
-                                <a class="nav-list-link" href="./portfolio.html">Портфолио</a>
-                            </li>
-                            <li class="nav-list-item">
-                                <a class="nav-list-link" href="">Контакты</a>
-                            </li>
-                        </ul>
-            
-                        <ul class="nav-contacts">
-                            <li class="nav-contacts-item"> 
-                                <a class="nav-contacts-link" href="mailto:info@devstudio.com">
-                                    <svg class="link-mail" width="16px" height="12px">
-                                    <use href="./sprite.svg#icon-mail"></use>
-                                    </svg>info@devstudio.com</a>
-                            </li>
-                            <li class="nav-contacts-item"> 
-                                <a class="nav-contacts-link" href="tel:+380961111111">
-                                    <svg class="link-phone" width="10" height="15">
-                                    <use href="./sprite.svg#icon-telephone"></use>
-                                </svg>+38 096 111 11 11</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+                        <div class="menu-container" id="menu-container" data-menu>
+                            <ul class="nav-list">
+                                <li class="nav-list-item">
+                                    <a class="nav-list-link current" href="./index.html">Студия</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a class="nav-list-link" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a class="nav-list-link" href="">Контакты</a>
+                                </li>
+                            </ul>
+                
+                            <ul class="nav-contacts">
+                                <li class="nav-contacts-item"> 
+                                    <a class="nav-contacts-link" href="mailto:info@devstudio.com">
+                                        <svg class="link-mail" width="16px" height="12px">
+                                        <use href="./sprite.svg#icon-mail"></use>
+                                        </svg>info@devstudio.com</a>
+                                </li>
+                                <li class="nav-contacts-item"> 
+                                    <a class="nav-contacts-link" href="tel:+380961111111">
+                                        <svg class="link-phone" width="10" height="15">
+                                        <use href="./sprite.svg#icon-telephone"></use>
+                                    </svg>+38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div> <!--container-->
         
-            </nav>
         </header>
         
         <main>
@@ -112,8 +114,8 @@
                                 <svg width="16" height="15">
                                     <use href="./sprite.svg#icon-border-check"></use>
                                 </svg>
-                                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span> 
-                                <a class="checkbox-link" href=""> Условия договора</a>
+                                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+                                <a class="checkbox-link" href=""> Условия договора</a></span>
                             </label>
                         </div>
                         <button class="button-modal"><span>Отправить</span></button>
@@ -128,7 +130,7 @@
                     <!-- <h2>Почему именно мы</h2> -->
                     <ul class="advantages-list">
                         <li class="advantages-item">
-                            <div class="wrapper-icons">
+                            <div class="advantages-wrapper-icons">
                                 <svg class="advantages-icon">
                                     <use href="./sprite.svg#icon-antenna"></use>
                                 </svg>
@@ -139,7 +141,7 @@
                             </p>
                         </li>
                         <li class="advantages-item">
-                            <div class="wrapper-icons">
+                            <div class="advantages-wrapper-icons">
                                 <svg class="advantages-icon">
                                     <use href="./sprite.svg#icon-clock"></use>
                                 </svg>
@@ -150,7 +152,7 @@
                             </p>
                         </li>
                         <li class="advantages-item">
-                            <div class="wrapper-icons">
+                            <div class="advantages-wrapper-icons">
                                 <svg class="advantages-icon">
                                     <use href="./sprite.svg#icon-diagram"></use>
                                 </svg>
@@ -161,7 +163,7 @@
                             </p>
                         </li>
                         <li class="advantages-item">
-                            <div class="wrapper-icons">
+                            <div class="advantages-wrapper-icons">
                                 <svg class="advantages-icon">
                                     <use href="./sprite.svg#icon-astronaut"></use>
                                 </svg>
@@ -179,7 +181,7 @@
         
             <section class="activity">
                 <div class="container">
-                    <h2 class="title">Чем мы занимаемся</h2>
+                    <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="activity-list">
                         <li class="activity-item">
                             <img src="./Images/work1.jpg" alt="" width="370">
@@ -207,12 +209,14 @@
         
             <section class="team">
                 <div class="container">
-                    <h2 class="title">Наша команда</h2>
+                    <h2 class="section-title">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-item">
-                            <img src="./Images/specialist1.jpg" alt="" width="270">
-                            <h3 class="employee">Игорь Демьяненко</h3>
-                            <p class="position">Product Designer</p>
+                            <div class="team-thumb">
+                                <img class="team-photo" src="./Images/specialist1.jpg" alt="Игорь Демьяненко">
+                            </div>
+                            <h3 class="team-employee">Игорь Демьяненко</h3>
+                            <p class="team-position">Product Designer</p>
                             <ul class="social-networks">
                                 <li class="social-icons-wr">
                                     <a class="social-icons"  href="">
@@ -245,9 +249,11 @@
                             </ul>
                         </li>
                         <li class="team-item">
-                            <img src="./Images/specialist2.jpg" alt="" width="270">
-                            <h3 class="employee">Ольга Репина</h3>
-                            <p class="position">Frontend Developer</p>
+                            <div class="team-thumb">
+                                <img class="team-photo" src="./Images/specialist2.jpg" alt="Ольга Репина">
+                            </div>
+                            <h3 class="team-employee">Ольга Репина</h3>
+                            <p class="team-position">Frontend Developer</p>
                             <ul class="social-networks">
                                 <li class="social-icons-wr">
                                     <a class="social-icons" href="">
@@ -280,9 +286,11 @@
                             </ul>
                         </li>
                         <li class="team-item">
-                            <img src="./Images/specialist3.jpg" alt="" width="270">
-                            <h3 class="employee">Николай Тарасов</h3>
-                            <p class="position">Marketing</p>
+                            <div class="team-thumb">
+                                <img class="team-photo" src="./Images/specialist3.jpg" alt="Николай Тарасов">
+                            </div>
+                            <h3 class="team-employee">Николай Тарасов</h3>
+                            <p class="team-position">Marketing</p>
                             <ul class="social-networks">
                                 <li class="social-icons-wr">
                                     <a class="social-icons" href="">
@@ -315,9 +323,11 @@
                             </ul>
                         </li>
                         <li class="team-item">
-                            <img src="./Images/specialist4.jpg" alt="" width="270">
-                            <h3 class="employee">Михаил Ермаков</h3>
-                            <p class="position">UI Designer</p>
+                            <div class="team-thumb">
+                                <img class="team-photo" src="./Images/specialist4.jpg" alt="Михаил Ермаков">
+                            </div>
+                            <h3 class="team-employee">Михаил Ермаков</h3>
+                            <p class="team-position">UI Designer</p>
                             <ul class="social-networks">
                                 <li class="social-icons-wr">
                                     <a class="social-icons" href="">
@@ -357,7 +367,7 @@
 
             <section class="clients">
                 <div class="container">
-                    <h2 class="title">Постоянные клиенты</h2>
+                    <h2 class="section-title">Постоянные клиенты</h2>
                     <ul class="clients-list">
                         <li class="clients-wrapper">
                             <a class="clients-icons" href="">

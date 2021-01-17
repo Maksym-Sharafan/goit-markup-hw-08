@@ -1,0 +1,237 @@
+// modal
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  padding: 94px 15px;
+}
+
+.modal {
+  position: relative;
+  padding: 40px;
+
+  background: $text-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+
+    max-width: 450px;
+    overflow-y: scroll;
+  }
+  @media screen and (min-width: 768px) {
+    overflow-y: scroll;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $text-white;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-close {
+  width: 18px;
+  height: 18px;
+  background-color: $text-white;
+}
+
+.button-close:hover .icon-close,
+.button-close:focus .icon-close {
+  fill: $accent-color;
+}
+
+.inputs {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $text-color-black;
+}
+
+.label-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.text-form {
+  margin-bottom: 4px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: $text-color-gray;
+}
+
+.input-form {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus ~ svg {
+    fill: $accent-color;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.label-form svg {
+  position: absolute;
+  bottom: 14px;
+  left: 15px;
+  fill: $text-color-black;
+}
+
+.comment {
+  padding: 12px 16px;
+  max-width: 370px;
+  max-height: 120px;
+  resize: none;
+}
+
+.checkbox {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.lable-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.input-checkbox {
+  appearance: none;
+  cursor: pointer;
+
+  & svg {
+    display: inline-block;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:checked + svg {
+    background-image: url(../Images/Icons/icon-check.svg);
+    background-color: $accent-color;
+
+    background-size: contain;
+    background-origin: border-box;
+    fill: transparent;
+    border-radius: 2px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.checkbox-text {
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2x;
+
+  letter-spacing: 0.03em;
+
+  color: $text-color-gray;
+}
+
+.checkbox-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2x;
+
+  letter-spacing: 0.03em;
+
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.button-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  & span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9px;
+    letter-spacing: 0.06em;
+    color: $text-white;
+  }
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}

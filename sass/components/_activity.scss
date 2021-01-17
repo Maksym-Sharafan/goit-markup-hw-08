@@ -1,0 +1,10 @@
+@media screen and (max-width: 767px) {
+  .activity {
+    display: none;
+  }
+}
+
+.activity {
+  padding-top: 60px;
+  background-color: $bg-section-gray;
+}
