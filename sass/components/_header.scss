@@ -9,8 +9,6 @@ header {
 }
 .logo {
   display: inline-block;
-  padding-top: 16px;
-  padding-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -25,6 +23,13 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .header-button {
     display: inline-flex;
     margin: 0 7px 0 0;
@@ -88,16 +93,52 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
   .header-button {
     display: none;
+  }
+  .menu-container {
+    display: flex;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+  }
+  .nav-list {
+    margin-right: 305px;
+  }
+
+  .nav-contacts {
+    display: flex;
+  }
+  .nav-contacts-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 .nav-list-item {
   position: relative;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .nav-list-link {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.7;
@@ -108,9 +149,16 @@ header {
   &:focus {
     color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .nav-contacts-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.7;
@@ -120,6 +168,12 @@ header {
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 

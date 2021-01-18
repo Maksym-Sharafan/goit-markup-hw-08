@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  width: 354px;
   height: 120px;
 
   border-radius: 4px;
@@ -46,4 +47,18 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $text-color-gray;
+}
+
+@media screen and (min-width: 768) {
+  .advantages-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .advantages-item {
+    margin: 15px;
+    width: 354px;
+  }
 }

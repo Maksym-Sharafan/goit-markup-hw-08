@@ -1,0 +1,134 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $bg-hero-footer;
+
+  & .logo {
+    padding: 0;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    color: $text-white;
+  }
+}
+
+.footer-addr-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.physical-addr {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $text-white;
+}
+
+.connection {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $adress-text-color;
+}
+
+.ft-icons {
+  justify-content: center;
+}
+
+.ft-social-links {
+  padding-top: 60px;
+}
+
+.ft-icons-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $text-white;
+}
+
+.ft-icons .social-icons {
+  background: rgba(255, 255, 255, 0.1);
+  color: $text-white;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.ft-icons .social-icon {
+  fill: currentColor;
+}
+
+.send {
+  padding-top: 60px;
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $text-white;
+  }
+}
+
+.input-send {
+  margin-bottom: 20px;
+  padding: 15px 16px;
+
+  width: 100%;
+  height: 50px;
+  color: $text-white;
+  background-color: $bg-hero-footer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.form-send .main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  fill: currentColor;
+
+  & span {
+    margin-right: 10px;
+  }
+}

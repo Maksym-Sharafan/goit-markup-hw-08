@@ -34,3 +34,25 @@ body.modal-open {
 
   color: $text-color-black;
 }
+
+.main-button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: $text-white;
+  background-color: $accent-color;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}
