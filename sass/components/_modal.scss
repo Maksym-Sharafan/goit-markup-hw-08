@@ -30,6 +30,9 @@
     padding: 40px;
 
     width: 450px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     overflow-y: scroll;
   }
 

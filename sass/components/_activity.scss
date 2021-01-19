@@ -1,10 +1,51 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .activity {
     display: none;
   }
 }
 
 .activity {
-  padding-top: 60px;
-  background-color: $bg-section-gray;
+  padding-bottom: 94px;
+}
+
+.activity-list {
+  display: flex;
+}
+
+.activity-item {
+  position: relative;
+
+  width: 370px;
+  height: 294px;
+
+  background-color: $bg-hero-footer;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.activity-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 70px;
+  width: 100%;
+
+  background: rgba(47, 48, 58, 0.8);
+
+  & p {
+    padding: 27px;
+    margin: 0 auto;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $text-white;
+  }
 }

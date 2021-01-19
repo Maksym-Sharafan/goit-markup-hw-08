@@ -31,8 +31,12 @@ body.modal-open {
   font-size: 28px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
   color: $text-color-black;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .main-button {
