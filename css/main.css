@@ -425,6 +425,7 @@ header {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 999;
   }
   .nav-list {
     padding-top: 60px;
@@ -1028,6 +1029,9 @@ header {
     margin: 15px;
     width: 354px;
   }
+  .advantages-title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1048,6 +1052,9 @@ header {
   }
   .advantages-item:not(:last-child) {
     margin-right: 30px;
+  }
+  .advantages-title {
+    text-align: left;
   }
 }
 
@@ -1139,6 +1146,7 @@ header {
 
 .team-item {
   padding-bottom: 24px;
+  background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;

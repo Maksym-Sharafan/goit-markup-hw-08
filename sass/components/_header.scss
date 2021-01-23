@@ -61,6 +61,7 @@ header {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 999;
   }
 
   .nav-list {
